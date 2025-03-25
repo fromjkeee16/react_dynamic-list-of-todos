@@ -18,9 +18,6 @@ export const TodoModal: React.FC<Props> = React.memo(
       error,
     } = useFetch<User>(fetchUser, {} as User);
 
-    // eslint-disable-next-line no-console
-    console.log('rendered TodoModal');
-
     return (
       <div className="modal is-active" data-cy="modal">
         <div className="modal-background" />
